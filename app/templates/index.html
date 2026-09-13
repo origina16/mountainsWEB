@@ -43,6 +43,18 @@
         <div id="map"></div>
 
         <aside id="sidebar">
+            <div id="add-route-section">
+                <h2>Add Route</h2>
+                <input type="text" id="route-name" placeholder="Route name" />
+                <textarea id="route-desc" placeholder="Description"></textarea>
+                <p class="hint">Click on the map to add points</p>
+                <p>Points: <span id="point-count">0</span> | Distance: <span id="route-distance">0.00</span> km</p>
+                <button id="btn-save-route" onclick="saveRoute()">Save Route</button>
+                <button class="btn-cancel" onclick="clearNewRoute()">Clear</button>
+            </div>
+
+            <div id="route-stats-panel" style="display:none"></div>
+
             <div id="route-list-section">
                 <h2>Routes</h2>
                 <div class="search-bar">
@@ -55,18 +67,6 @@
                     </label>
                 </div>
                 <ul id="route-list"></ul>
-            </div>
-
-            <div id="route-stats-panel" style="display:none"></div>
-
-            <div id="add-route-section">
-                <h2>Add Route</h2>
-                <input type="text" id="route-name" placeholder="Route name" />
-                <textarea id="route-desc" placeholder="Description"></textarea>
-                <p class="hint">Click on the map to add points</p>
-                <p>Points: <span id="point-count">0</span> | Distance: <span id="route-distance">0.00</span> km</p>
-                <button id="btn-save-route" onclick="saveRoute()">Save Route</button>
-                <button class="btn-cancel" onclick="clearNewRoute()">Clear</button>
             </div>
 
             <div id="2fa-section" style="display:none">
