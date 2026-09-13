@@ -1,0 +1,6 @@
+Flask==3.1.1
+Flask-SQLAlchemy==3.1.1
+Flask-Login==0.6.3
+SQLAlchemy==2.0.41
+pyotp==2.9.0
+qrcode==8.2
